@@ -7,7 +7,7 @@ body {
 
 .context{
   padding-top: 30vh;
-  padding-bottom: 30vh;
+  padding-bottom: 10vh;
 }
 /* Nav bar */
 .logo { 
@@ -151,14 +151,13 @@ nav ul li a {
     margin: 0;
   }
 
-  .topnav, #myTopnav {
-    margin-left: 2%;
-    margin-right: 2%;
-    position: fixed;
-    top: 10;
-    width: 96%;
-    display: block;
-    transition: top 0.3s;
+  #scroll{
+    padding-top: 15vh;
+    text-align: center;
+  }
+
+  a{
+    text-decoration: none;
   }
 
   
@@ -231,7 +230,7 @@ nav ul li a {
   
   .container {
     position: relative;
-    width: 44%;
+    width: 48%;
     margin: 10pt;
   }
   
@@ -436,3 +435,6 @@ nav ul li a {
     from{border-right-color: #1A1A1A;}
     to{border-right-color: transparent;}
   }
+
+
+  
