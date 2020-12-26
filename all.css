@@ -4,7 +4,6 @@ body {
     font-style: normal;
     margin:0;
   }
-
 .context{
   padding-top: 30vh;
   padding-bottom: 10vh;
@@ -155,6 +154,11 @@ nav ul li a {
     padding-top: 15vh;
     text-align: center;
   }
+  #scrollup{
+    padding-top: 10vh;
+    padding-bottom: 15vh;
+    text-align: center;
+  }
 
   a{
     text-decoration: none;
@@ -233,6 +237,12 @@ nav ul li a {
     width: 48%;
     margin: 10pt;
   }
+
+  .container2 {
+    position: relative;
+    width: 45%;
+    margin: 10pt;
+  }
   
   .works {
     display: block;
@@ -254,6 +264,9 @@ nav ul li a {
   }
   
   .container:hover .overlay {
+    opacity: 1;
+  }
+  .container2:hover .overlay {
     opacity: 1;
   }
   
