@@ -1,9 +1,15 @@
 @import url("https://use.typekit.net/nyt6teh.css");
+@import url("https://fonts.googleapis.com/css?family=Archivo:500|Open+Sans:300,700");
 body {
-    font-family: objektiv-mk1, sans-serif;
-    font-style: normal;
-    margin:0;
-  }
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+ }
+ 
+ h1, h2, h4, h5, h6 {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 500;
+  color: #1A1A1A;
+ }
 .context{
   padding-top: 30vh;
   padding-bottom: 10vh;
@@ -48,51 +54,38 @@ body {
 
 
 /*font */ 
-  h1{
-    font-size: 28px;
-    color: #1A1A1A;
-    font-weight: bold;
-    text-align: center;
-
-  }
-  h2 {
-    font-size: 12px;
-    color: #676767;
-    font-weight: 100;
-    text-transform: uppercase;
-  }
-
-  h3 {
-    font-size: 15px;
-    color: #1A1A1A;
-    font-weight: bold;
-  }
-
-  h4 {
-    font-size: 20px;
-    color:#676767;
-    font-weight: bold;
+  .textleft{
     text-align: left;
   }
-  h5 {
-    font-size: 40px;
-    color: #1A1A1A;
-    font-weight: bold;
-    padding: 0; 
-    margin: 0;
+  .textcenter{
+    text-align: center;
   }
-  
-  p, li {
-    font-size: 15px;
-    color: #1A1A1A;
-    font-weight: lighter;
-    line-height: 25pt;
+  h1{
+    text-align: center;
+    margin-bottom: 40pt;
   }
-  
-  h6 {
-    font-size: 80px;
-    padding: 0; 
-    margin: 0;
+  h2{
+    text-align: center;
+    font-size: 17pt;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #676767;
+    margin-bottom: 20pt;
+  }
+  h3{
+    font-size: 17pt;
+    margin-bottom: 20pt;
+  }
+
+  p{
+   line-height: 20pt;
+  }
+  li{
+    line-height: 20pt;
+  }
+
+  .quote{
+    text-align: left;
   }
 
   .mini {
@@ -103,21 +96,20 @@ body {
     margin: 0;
   }
 
-  #scroll{
-    padding-top: 15vh;
-    text-align: center;
-  }
-  #scrollup{
-    padding-top: 10vh;
-    padding-bottom: 15vh;
-    text-align: center;
-  }
-
   a{
     text-decoration: none;
   }
 
-  
+  /*img */ 
+  img{
+    margin-bottom: 30pt;
+  }
+  .imgsmall{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300pt;
+  }
   .left{
     float: left;
     display: block;
@@ -128,7 +120,6 @@ body {
     font-size: 17px;
 
   }
-
   .right{
     float: right;
     display: block;
@@ -137,19 +128,6 @@ body {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-  }
-
-  .topnav a:hover {
-    color: pink;
-  }
-
-  .icon {
-    padding: 14px 16px;
-    font-size: 20px;
-  }
-  
-  .topnav .icon {
-    display: none;
   }
 
   .margin{
@@ -305,6 +283,12 @@ body {
     width: 110%;
     margin-left: -5%;
     margin-right: 5%;
+    margin-top: 30pt;
+  }
+  .gifimg{
+    width: 130%;
+    margin-left: -15%;
+    margin-right: 15%;
   }
   .shadow{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
