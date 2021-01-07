@@ -355,9 +355,16 @@ nav ul li a {
     background-color: #FEBEB6;
     padding: 80px  20% 80px 20%;
   }
+  .blue{
+    background-color: #B6CFFE;
+    padding: 80px  5% 80px 5%;
+  }
+  .white-2{
+    padding: 80px  5% 80px 5%;
+  }
 
   @media(max-width: 1050px){
-    .yellow,.green,.white,.grey,.red{
+    .yellow,.green,.white,.grey,.red,.blue{
       padding: 40px  5% 40px 5%;
     }
   }
@@ -477,7 +484,25 @@ nav ul li a {
     to{border-right-color: transparent;}
   }
 
+  /* proflie */
 
+  .profile{
+    width: 40%;
+  }
+  .profile-text{
+    width: 50%;
+  }
 
-
-  
+  /* gallery */
+  .wrap-gallery{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .wrap-gallery > img{
+    width: 270pt;
+    height: 100%;
+    padding: 1%;
+  }
