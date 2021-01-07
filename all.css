@@ -8,6 +8,29 @@ body {
   padding-top: 30vh;
   padding-bottom: 10vh;
 }
+/* progess bar */
+/* The progress container (grey background) */
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: lightblue;
+  width: 0%;
+}
+
 /* Nav bar */
 .logo { 
   line-height: 60px;
@@ -453,6 +476,8 @@ nav ul li a {
     from{border-right-color: #1A1A1A;}
     to{border-right-color: transparent;}
   }
+
+
 
 
   
