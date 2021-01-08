@@ -14,7 +14,6 @@ body {
   padding-top: 20vh;
   padding-bottom: 10vh;
 }
-/* progess bar */
 /* The progress container (grey background) */
 
 .header {
@@ -104,6 +103,9 @@ body {
   a{
     text-decoration: none;
   }
+  .navbar-brand{
+    text-align: center;
+  }
 
   /*backup*/ 
   #scrollup{
@@ -113,6 +115,83 @@ body {
     font-size: 12pt;
   }
 
+  /* [1] The container */
+.img-hover-zoom {
+  height: 330pt; /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+  position: relative;
+  width: 48%;
+  margin: 1%;
+}
+#imgsamller {
+  height: 200pt;
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+  position: relative;
+}
+@media(max-width: 1250px){
+  .img-hover-zoom {
+    height: 280pt; /* [1.1] Set it as per your need */
+    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+    position: relative;
+    width: 48%;
+    margin: 1%;
+  }
+  #imgsamller {
+    height: 170pt;
+    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+    position: relative;
+  }
+}
+@media(max-width: 1050px){
+  .img-hover-zoom {
+    height:auto; /* [1.1] Set it as per your need */
+    overflow: auto; /* [1.2] Hide the overflowing of child elements */
+    position: relative;
+    width: 100%;
+  }
+
+  #imgsamller {
+    width: 48%;
+    margin: 1%;
+    height: 200pt;
+    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+    position: relative;
+  }
+}
+
+@media(max-width: 700px){
+  #imgsamller {
+    width: 48%;
+    margin: 1%;
+    height: auto;
+    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+    position: relative;
+  }
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform .5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.1);
+}
+  /* Brightness-zoom Container */
+.img-hover-zoom--brightness img {
+  transition: transform 2s, filter 1.5s ease-in-out;
+  transform-origin: center center;
+  filter: brightness(50%);
+}
+
+/* The Transformation */
+.img-hover-zoom--brightness:hover img {
+  filter: brightness(100%);
+  transform: scale(1.1);
+}
+
+  
   /*img */ 
   img{
     margin-bottom: 30pt;
@@ -123,42 +202,13 @@ body {
     margin-right: auto;
     width: 300pt;
   }
-  .left{
-    float: left;
-    display: block;
-    color: #1A1A1A;
-    text-align: left;
-    padding: 14px 0px;
-    text-decoration: none;
-    font-size: 17px;
-
-  }
-  .right{
-    float: right;
-    display: block;
-    color: #1A1A1A;
-    text-align: right;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
+  
 
   .margin{
     margin-left: 15%;
     margin-right: 15%;
   }
   
-  .flex-container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .flex-container > img {
-    font-size: 30px;
-    width: 100%;
-    height: 100%;
-    margin-top: 5%;
-  }
 
   .intro{
     padding: 10% 0px;
@@ -172,15 +222,23 @@ body {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
   }
-  
-  .container {
-    position: relative;
+  .half{
     width: 48%;
-    margin: 10pt;
   }
+
+  @media(max-width: 1050px){
+    .wrap-box{
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+    }
+  }
+  
 
   .container2 {
     position: relative;
@@ -188,28 +246,7 @@ body {
     margin: 10pt;
   }
   
-  .works {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
   
-  .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: rgb(96, 96, 96, 0.6);
-  }
-  
-  .container:hover .overlay {
-    opacity: 1;
-  }
   .container2:hover .overlay {
     opacity: 1;
   }
@@ -226,14 +263,6 @@ body {
     text-align: center;
   }
 
-  @media(max-width: 1050px){
-    .container {
-      position: relative;
-      width: 100%;
-      margin: 10pt;
-    }
-
-  }
 
   .wrap{
     text-align: center;
@@ -415,7 +444,7 @@ body {
   /* proflie */
 
   .profile{
-    width: 40%;
+    width: 100%;
   }
   .profile-text{
     width: 50%;
