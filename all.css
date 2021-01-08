@@ -11,7 +11,7 @@ body {
   color: #1A1A1A;
  }
 .context{
-  padding-top: 30vh;
+  padding-top: 20vh;
   padding-bottom: 10vh;
 }
 /* progess bar */
@@ -77,9 +77,14 @@ body {
     margin-bottom: 20pt;
   }
 
+  h4{
+    font-size: 12pt;
+  }
+
   p{
    line-height: 20pt;
   }
+
   li{
     line-height: 20pt;
   }
@@ -98,6 +103,14 @@ body {
 
   a{
     text-decoration: none;
+  }
+
+  /*backup*/ 
+  #scrollup{
+    padding-top: 10vh;
+    padding-bottom: 15vh;
+    text-align: center;
+    font-size: 12pt;
   }
 
   /*img */ 
@@ -255,7 +268,7 @@ body {
     padding: 80px  20% 80px 20%;
   }
   .grey{
-    background-color: #e6e6e6;
+    background-color: #F4F4F4;
     padding: 80px  20% 80px 20%;
   }
 
@@ -289,6 +302,7 @@ body {
     width: 130%;
     margin-left: -15%;
     margin-right: 15%;
+    margin-bottom: 40pt;
   }
   .shadow{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
