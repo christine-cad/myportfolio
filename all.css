@@ -61,7 +61,7 @@ body {
   }
   h1{
     text-align: center;
-    margin-bottom: 40pt;
+    margin-bottom: 20pt;
   }
   h2{
     text-align: center;
@@ -73,7 +73,6 @@ body {
   }
   h3{
     font-size: 17pt;
-    margin-bottom: 20pt;
   }
 
   h4{
@@ -81,6 +80,7 @@ body {
   }
 
   p{
+   padding-top:-10pt;
    line-height: 20pt;
   }
 
@@ -115,58 +115,25 @@ body {
     font-size: 12pt;
   }
 
+.indeximg{
+  margin-bottom: 8%;
+}
+
+ .otherworks{
+   height:100%;
+   width: 33%;
+   padding: 10pt;
+   margin-bottom: 50pt;
+ } 
   /* [1] The container */
-.img-hover-zoom {
-  height: 330pt; /* [1.1] Set it as per your need */
-  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+.img-hover-zoom { /* [1.1] Set it as per your need */
+  overflow: visible; /* [1.2] Hide the overflowing of child elements */
   position: relative;
-  width: 48%;
-  margin: 1%;
 }
 #imgsamller {
   height: 200pt;
   overflow: hidden; /* [1.2] Hide the overflowing of child elements */
   position: relative;
-}
-@media(max-width: 1250px){
-  .img-hover-zoom {
-    height: 280pt; /* [1.1] Set it as per your need */
-    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
-    position: relative;
-    width: 48%;
-    margin: 1%;
-  }
-  #imgsamller {
-    height: 170pt;
-    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
-    position: relative;
-  }
-}
-@media(max-width: 1050px){
-  .img-hover-zoom {
-    height:auto; /* [1.1] Set it as per your need */
-    overflow: auto; /* [1.2] Hide the overflowing of child elements */
-    position: relative;
-    width: 100%;
-  }
-
-  #imgsamller {
-    width: 48%;
-    margin: 1%;
-    height: 200pt;
-    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
-    position: relative;
-  }
-}
-
-@media(max-width: 700px){
-  #imgsamller {
-    width: 48%;
-    margin: 1%;
-    height: auto;
-    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
-    position: relative;
-  }
 }
 
 /* [2] Transition property for smooth transformation of images */
@@ -193,9 +160,6 @@ body {
 
   
   /*img */ 
-  img{
-    margin-bottom: 30pt;
-  }
   .imgsmall{
     display: block;
     margin-left: auto;
@@ -295,6 +259,10 @@ body {
   }
   .white{
     padding: 80px  20% 80px 20%;
+  }
+  
+  .white2{
+    padding: 0px  10% 0px 10%;
   }
   .grey{
     background-color: #F4F4F4;
@@ -431,7 +399,7 @@ body {
   
   @keyframes animated-text{
     from{width: 0;}
-    to{width: 680px;}
+    to{width: 500pt;}
   }
   
   /* cursor animations */
