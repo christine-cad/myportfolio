@@ -96,14 +96,14 @@ body {
   }
 
   .mini {
-    font-size: 12px;
+    font-size: 12pt;
     color: grey;
     text-align: center;
     padding: 0; 
     margin: 0;
   }
   .mini2 {
-    font-size: 12px;
+    font-size: 12pt;
     padding: 0; 
     margin: 0;
   }
@@ -428,11 +428,11 @@ body {
 
   
   .type {
-    border-right: solid 3px #1A1A1A;
+    border-right: solid 3pt #1A1A1A;
     white-space: nowrap;
     overflow: hidden;    
     font-family: 'Source Code Pro', monospace;  
-    font-size: 20px;
+    font-size: 15pt;
     color:  #1A1A1A;
     margin: 0 auto;
   }
