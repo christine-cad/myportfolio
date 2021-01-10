@@ -59,13 +59,14 @@ body {
   .textcenter{
     text-align: center;
   }
+  .textright{
+    text-align: right;
+  }
   h1{
-    text-align: center;
     margin-bottom: 20pt;
   }
   h2{
-    text-align: center;
-    font-size: 17pt;
+    font-size: 15pt;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #676767;
@@ -96,6 +97,11 @@ body {
     font-size: 12px;
     color: grey;
     text-align: center;
+    padding: 0; 
+    margin: 0;
+  }
+  .mini2 {
+    font-size: 12px;
     padding: 0; 
     margin: 0;
   }
@@ -159,7 +165,7 @@ body {
 }
 
   
-  /*img */ 
+  /*img*/ 
   .imgsmall{
     display: block;
     margin-left: auto;
@@ -181,7 +187,47 @@ body {
   header > img{
     width: 100%;
   }
-  
+  /*otherworks*/
+  .twocol {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: center;
+  }
+  .sixty{
+    width: 55%;
+  }
+  .fourty{
+    width: 35%;
+    padding-left:20pt;
+  }
+  .fixed{
+    width: 35%;
+    overflow: hidden;
+    position: fixed;
+  }
+
+  @media(max-width: 1050px){
+    .twocol{
+      flex-wrap: wrap-reverse;
+    }
+    .sixty{
+      width: 100%;
+    }
+    .fourty{
+      width: 100%;
+      height: auto;
+      padding-left: 20pt;
+      padding-right: 20pt;
+      background-color: white;
+    }
+    .fixed{
+      width: 100%;
+      position: relative;
+    }
+
+  }
+
   .wrap-box{
     display: flex;
     align-items: center;
