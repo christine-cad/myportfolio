@@ -189,6 +189,25 @@ body {
   header > img{
     width: 100%;
   }
+
+  /*spilt text*/
+  .split {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  .heading{
+    width: 220pt; 
+    padding-right:20pt ;
+  }
+  .maintext{
+    width: 80%; 
+    padding-right:20pt ;
+    padding-top: 14pt  ;
+  }
+
+
   /*otherworks*/
   .twocol {
     display: flex;
@@ -342,6 +361,7 @@ body {
     margin-left: -5%;
     margin-right: 5%;
     margin-top: 30pt;
+    margin-bottom: 30pt;
   }
   .gifimg{
     width: 130%;
@@ -357,11 +377,12 @@ body {
     margin-bottom: 30pt;
   }
   .round{
-    border: #1A1A1A solid 4px;
+    border: white solid 4px;
     border-radius: 25px;
     width:"100%";
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-bottom: 30pt;
+    margin-top: 30pt;
   }
 
   th {
