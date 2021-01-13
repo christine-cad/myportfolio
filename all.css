@@ -30,11 +30,23 @@ body {
 }
 
 /* The progress bar (scroll indicator) */
-.progress-bar {
+.progress-bar-purple {
   height: 8px;
-  background: lightblue;
+  background: #A974F2;
   width: 0%;
 }
+
+.progress-bar-yellow {
+  height: 8px;
+  background: #fcce6b;
+  width: 0%;
+}
+.progress-bar-green {
+  height: 8px;
+  background: #7e9971;
+  width: 0%;
+}
+
 
 /* Nav bar */
 .smart-scroll{
@@ -64,31 +76,34 @@ body {
   }
   h1{
     text-align: center;
-    margin-bottom: 20pt;
+    margin-bottom: 20px;
   }
   h2{
     text-align: center;
-    font-size: 15pt;
+    font-size: 15px;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #676767;
     margin-bottom: 20pt;
   }
   h3{
-    font-size: 17pt;
+    font-size: 17px;
   }
 
   h4{
-    font-size: 12pt;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 20pt;
   }
 
   p{
+   font-size: 15px;
    padding-top:-10pt;
    line-height: 20pt;
   }
 
   li{
-    line-height: 20pt;
+    line-height: 22pt;
   }
 
   .quote{
@@ -197,14 +212,12 @@ body {
     width: 100%;
   }
 
-  .heading{
-    width: 220pt; 
-    padding-right:20pt ;
+  .left{
+    width: 50%;
   }
-  .maintext{
-    width: 80%; 
-    padding-right:20pt ;
-    padding-top: 14pt  ;
+  .right{
+    width: 50%; 
+    text-align: right;
   }
 
 
@@ -340,6 +353,7 @@ body {
     background-color: #D8D8EF;
     padding: 80px  20% 80px 20%;
   }
+
   .blue{
     background-color: #B6CFFE;
     padding: 80px  5% 80px 5%;
@@ -363,19 +377,21 @@ body {
     margin-top: 30pt;
     margin-bottom: 30pt;
   }
+  .wideshadow{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 110%;
+    margin-left: -5%;
+    margin-right: 5%;
+    margin-top: 30pt;
+    margin-bottom: 30pt;
+  }
   .gifimg{
     width: 130%;
     margin-left: -15%;
     margin-right: 15%;
     margin-bottom: 40pt;
   }
-  .shadow{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-left: -5%;
-    margin-right: 5%;
-    width: 110%;
-    margin-bottom: 30pt;
-  }
+
   .round{
     border: white solid 4px;
     border-radius: 25px;
