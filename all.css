@@ -123,7 +123,8 @@ body {
   }
 
   li{
-    line-height: 22pt;
+    font-size: 15px;
+    line-height: 20pt;
   }
 
   .quote{
