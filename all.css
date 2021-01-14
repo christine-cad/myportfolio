@@ -90,6 +90,14 @@ body {
     text-align: center;
     margin-bottom: 20px;
   }
+  @media(max-width: 900px){
+    h1{
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+  }
+  
   h2{
     text-align: center;
     font-size: 15px;
@@ -230,6 +238,15 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 300pt;
+  }
+
+  @media(max-width: 1050px){
+    .imgsmall{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 200pt;
+    }
   }
   
 
