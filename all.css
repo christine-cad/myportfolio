@@ -9,6 +9,7 @@ body {
   font-family: 'Archivo', sans-serif;
   font-weight: 500;
   color: #1A1A1A;
+  text-transform: capitalize;
  }
 .context{
   padding-top: 20vh;
