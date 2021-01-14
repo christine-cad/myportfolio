@@ -141,13 +141,41 @@ body {
 .indeximg{
   margin-bottom: 8%;
 }
+.otherworks{
+  height:100%;
+  width: 33%;
+  padding: 10pt;
+  margin-bottom: 50pt;
+} 
 
- .otherworks{
-   height:100%;
-   width: 33%;
-   padding: 10pt;
-   margin-bottom: 50pt;
- } 
+@media(max-width: 1050px){
+  .indeximg{
+    margin-bottom: 8%;
+    align-items: center;
+    width: 145%;
+    margin-left: -35%;
+    margin-right: 10%;
+  }
+
+  #indeximgright{
+    margin-bottom: 8%;
+    align-items: center;
+    width: 145%;
+    margin-left: -10%;
+    margin-right: 35%;
+
+  }
+  .otherworks{
+    height:100%;
+    width: 100%;
+    padding: 0pt;
+    margin-bottom: 10pt;
+  } 
+}
+
+
+
+ 
   /* [1] The container */
 .img-hover-zoom { /* [1.1] Set it as per your need */
   overflow: visible; /* [1.2] Hide the overflowing of child elements */
@@ -459,40 +487,7 @@ body {
     content: ' —';
   }
 
-  /* typeanimation */
-
-  @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
-
   
-  .type {
-    border-right: solid 3pt #1A1A1A;
-    white-space: nowrap;
-    overflow: hidden;    
-    font-family: 'Source Code Pro', monospace;  
-    font-size: 15pt;
-    color:  #1A1A1A;
-    margin: 0 auto;
-  }
-  
-  /* Animation */
-  .type {
-    animation: animated-text 4s steps(29,end) 1s 1 normal both,
-               animated-cursor 600ms steps(29,end) infinite;
-  }
-  
-  /* text animation */
-  
-  @keyframes animated-text{
-    from{width: 0;}
-    to{width: 500pt;}
-  }
-  
-  /* cursor animations */
-  
-  @keyframes animated-cursor{
-    from{border-right-color: #1A1A1A;}
-    to{border-right-color: transparent;}
-  }
 
   /* proflie */
 
@@ -515,4 +510,58 @@ body {
     width: 270pt;
     height: 100%;
     padding: 1%;
+  }
+
+
+
+
+  /* typeanimation */
+
+  @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+  .output {
+    text-align:center;
+    font-family: 'Source Code Pro', monospace;
+  }
+
+  .output > h1{
+    font-size: 17pt;
+    color:  #1A1A1A;
+    font-family: 'Source Code Pro', monospace;
+  }
+
+  
+  /* Cursor Styling */
+  
+  .cursor::after {
+    content:'';
+    display:inline-block;
+    margin-left:3px;
+    background-color:grey;
+    animation-name:blink;
+    animation-duration:0.5s;
+    animation-iteration-count: infinite;
+  }
+  h1.cursor::after {
+    height:24px;
+    width:3px;
+  }
+  p.cursor::after {
+    height:13px;
+    width:6px;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity:1;
+    }
+    49% {
+      opacity:1;
+    }
+    50% {
+      opacity:0;
+    }
+    100% {
+      opacity:0;
+    }
   }
