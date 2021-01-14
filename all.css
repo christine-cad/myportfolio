@@ -330,6 +330,7 @@ body {
   }
   .half{
     width: 48%;
+    padding: 10pt;
   }
 
   @media(max-width: 1050px){
@@ -341,6 +342,13 @@ body {
       width: 100%;
     }
   }
+  @media(max-width: 600px){
+    .half{
+      width: 90%;
+    }
+  }
+
+
   
 
   .container2 {
