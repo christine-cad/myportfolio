@@ -127,13 +127,16 @@ body {
     font-size: 15px;
     line-height: 20pt;
   }
+  b{
+    font-weight: 600;
+  }
 
   .quote{
     text-align: left;
   }
 
   .mini {
-    font-size: 12pt;
+    font-size: 9pt;
     color: grey;
     text-align: center;
     padding: 0; 
